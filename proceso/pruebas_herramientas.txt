@@ -1,0 +1,4 @@
+Comando: node tests/test_tools.js
+5 comprobaciones de negocio: OK
+
+Exit code: 0

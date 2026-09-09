@@ -1,0 +1,47 @@
+[
+  {
+    "name": "get_replenishment_plan",
+    "arguments": {
+      "scenario": "03"
+    },
+    "observation": {
+      "scenario": "03",
+      "source": "datos/escenario_03.csv",
+      "raw_rows": [
+        {
+          "sku": "RES-04",
+          "stock": "2",
+          "daily_demand": "3",
+          "lead_days": "",
+          "safety_days": "2",
+          "incoming": "0",
+          "pack": "5"
+        },
+        {
+          "sku": "LAP-02",
+          "stock": "5",
+          "daily_demand": "0",
+          "lead_days": "2",
+          "safety_days": "1",
+          "incoming": "0",
+          "pack": "4"
+        }
+      ],
+      "proposals": [
+        {
+          "sku": "RES-04",
+          "quantity": null,
+          "action": "manual_review",
+          "detail": "Faltan datos; no se supone un valor"
+        },
+        {
+          "sku": "LAP-02",
+          "quantity": 0,
+          "action": "no_order",
+          "detail": "Objetivo 0; stock 5; entrante 0; múltiplo 4"
+        }
+      ],
+      "formula": "ceil(max(0, demanda_diaria*(plazo+seguridad)-stock-entrante)/bulto)*bulto"
+    }
+  }
+]

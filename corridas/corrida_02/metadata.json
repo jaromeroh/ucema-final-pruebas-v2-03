@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-09-09T17:41:24.406Z",
+  "requested_model": "gpt-5-mini-2025-08-07",
+  "returned_models": [
+    "gpt-5-mini-2025-08-07",
+    "gpt-5-mini-2025-08-07"
+  ],
+  "api_calls": 2,
+  "input_tokens": 1366,
+  "output_tokens": 195,
+  "cost_usd": 0.0007314999999999999,
+  "latency_seconds": 6.639215499,
+  "status": "validated",
+  "source_sha256": {
+    "src/main.js": "794bd97b840c30708f8d9052bda9a849ec9b3be6f60bee81f95bb8e553b57961",
+    "prompts/system_prompt.md": "f5bc8571a42dbd480c3e0f7cfe02e1cd26a358f5479bec1783eafc536ac61d5a",
+    "prompts/user_prompt.md": "4489fe8239b58f1373bc58d76ab718de5b65d3a661de24f52f0a20f973e332db",
+    "datos/escenario_01.csv": "e0d4779f6ffb0200fb3ee74ad580066d8249744ba48d0b998bb80c30c1e836ae",
+    "datos/escenario_02.csv": "b007f926fde752ad5be641f3f5021f421e1d195f84acec7e0b5722e04f2193b5",
+    "datos/escenario_03.csv": "5d46e002bce5f5a6a809bb6afd0c0779af7dd8862259ec2aace7346d329728e8"
+  },
+  "pricing": {
+    "input_per_million_usd": 0.25,
+    "cached_input_per_million_usd": 0.025,
+    "output_per_million_usd": 2,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+    "checked_date": "2026-09-09"
+  }
+}

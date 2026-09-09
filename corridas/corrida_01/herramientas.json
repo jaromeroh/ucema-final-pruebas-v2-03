@@ -1,0 +1,47 @@
+[
+  {
+    "name": "get_replenishment_plan",
+    "arguments": {
+      "scenario": "01"
+    },
+    "observation": {
+      "scenario": "01",
+      "source": "datos/escenario_01.csv",
+      "raw_rows": [
+        {
+          "sku": "CUA-01",
+          "stock": "3",
+          "daily_demand": "2",
+          "lead_days": "4",
+          "safety_days": "2",
+          "incoming": "2",
+          "pack": "5"
+        },
+        {
+          "sku": "LAP-02",
+          "stock": "20",
+          "daily_demand": "1",
+          "lead_days": "3",
+          "safety_days": "2",
+          "incoming": "0",
+          "pack": "4"
+        }
+      ],
+      "proposals": [
+        {
+          "sku": "CUA-01",
+          "quantity": 10,
+          "action": "buy",
+          "detail": "Objetivo 12; stock 3; entrante 2; múltiplo 5"
+        },
+        {
+          "sku": "LAP-02",
+          "quantity": 0,
+          "action": "no_order",
+          "detail": "Objetivo 5; stock 20; entrante 0; múltiplo 4"
+        }
+      ],
+      "formula": "ceil(max(0, demanda_diaria*(plazo+seguridad)-stock-entrante)/bulto)*bulto"
+    }
+  }
+]

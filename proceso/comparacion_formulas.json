@@ -1,0 +1,38 @@
+[
+  {
+    "input": {
+      "stock": 3,
+      "demand": 2,
+      "lead": 4,
+      "safety": 2,
+      "incoming": 2,
+      "pack": 5
+    },
+    "first_formula": 9,
+    "selected_formula": 10
+  },
+  {
+    "input": {
+      "stock": 0,
+      "demand": 3,
+      "lead": 2,
+      "safety": 1,
+      "incoming": 12,
+      "pack": 3
+    },
+    "first_formula": 9,
+    "selected_formula": 0
+  },
+  {
+    "input": {
+      "stock": 1,
+      "demand": 4,
+      "lead": 3,
+      "safety": 1,
+      "incoming": 0,
+      "pack": 6
+    },
+    "first_formula": 15,
+    "selected_formula": 18
+  }
+]

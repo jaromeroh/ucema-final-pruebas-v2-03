@@ -1,0 +1,19 @@
+{
+  "scenario": "01",
+  "summary": "Propuesta basada en demanda diaria, plazo, stock de seguridad, stock actual, pedidos entrantes y tamaño de bulto. Revisión humana requerida.",
+  "proposals": [
+    {
+      "sku": "CUA-01",
+      "quantity": 10,
+      "action": "buy",
+      "reason": "Necesario para cubrir demanda (objetivo 12), stock 3 y entrante 2; redondeado a bulto de 5."
+    },
+    {
+      "sku": "LAP-02",
+      "quantity": 0,
+      "action": "no_order",
+      "reason": "Stock existente (20) cubre objetivo (5); no se requiere pedido."
+    }
+  ],
+  "requires_human_approval": true
+}

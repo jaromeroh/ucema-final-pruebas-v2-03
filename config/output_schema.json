@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "scenario": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "buy",
+              "no_order",
+              "manual_review"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sku",
+          "quantity",
+          "action",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "requires_human_approval": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    }
+  },
+  "required": [
+    "scenario",
+    "summary",
+    "proposals",
+    "requires_human_approval"
+  ],
+  "additionalProperties": false
+}

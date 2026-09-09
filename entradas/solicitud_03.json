@@ -1,0 +1,4 @@
+{
+  "scenario": "03",
+  "request": "Proponer reposición de mercadería de un pequeño comercio. Usar demanda diaria, plazo de reposición, stock de seguridad, stock existente, pedidos entrantes y tamaño de bulto. No comprar ni contactar proveedores."
+}

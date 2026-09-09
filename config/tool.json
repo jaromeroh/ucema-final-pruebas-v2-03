@@ -1,0 +1,23 @@
+{
+  "type": "function",
+  "name": "get_replenishment_plan",
+  "description": "Leer existencias y calcular propuestas de reposición sin emitir compras.",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "scenario": {
+        "type": "string",
+        "enum": [
+          "01",
+          "02",
+          "03"
+        ]
+      }
+    },
+    "required": [
+      "scenario"
+    ],
+    "additionalProperties": false
+  }
+}

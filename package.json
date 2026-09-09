@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Asistente de reposici\u00f3n; sin dependencias externas"
+}
